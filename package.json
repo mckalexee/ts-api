@@ -1,0 +1,53 @@
+{
+  "name": "ts-api",
+  "version": "1.0.0",
+  "description": "A starter Express/Typescript API",
+  "main": "dist/boot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "nodemon --watch dist --delay 1 --inspect ./dist/boot.js",
+    "dev": "concurrently --names \"TSC,NODE\" \"tsc -w\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run debug\"  ",
+    "start": "node dist/boot.js",
+    "postinstall": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mckalexee/ts-api.git"
+  },
+  "author": "Alex McKenzie",
+  "license": "ISC",
+  "engines": {
+    "node": "~8.10.0"
+  },
+  "bugs": {
+    "url": "https://github.com/mckalexee/ts-api/issues"
+  },
+  "homepage": "https://github.com/mckalexee/ts-api#readme",
+  "dependencies": {
+    "@types/body-parser": "^1.16.8",
+    "@types/cookie-parser": "^1.4.1",
+    "@types/cors": "^2.8.3",
+    "@types/jsonwebtoken": "^7.2.6",
+    "@types/node": "^9.6.2",
+    "@types/sequelize": "^4.27.14",
+    "@types/uuid": "^3.4.3",
+    "@types/winston": "^2.3.9",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "googleapis": "^28.1.0",
+    "jsonwebtoken": "^8.2.1",
+    "mysql2": "^1.5.3",
+    "sequelize": "^4.37.6",
+    "sequelize-cli": "^4.0.0",
+    "typescript": "^2.8.1",
+    "uuid": "^3.2.1",
+    "winston": "^2.4.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.17.3",
+    "tslint": "^5.9.1"
+  }
+}
