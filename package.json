@@ -36,7 +36,7 @@
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "googleapis": "^43.0.0",
-    "jsonwebtoken": "^8.2.1",
+    "jsonwebtoken": "^9.0.0",
     "mysql2": "^1.5.3",
     "sequelize": "^5.8.14",
     "sequelize-cli": "^5.5.1",
